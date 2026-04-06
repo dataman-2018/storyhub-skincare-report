@@ -12,7 +12,7 @@
 body{font-family:'Noto Sans JP','DM Sans',sans-serif;background:#1a1a2e;color:var(--t);overflow:hidden;height:100vh;-webkit-font-smoothing:antialiased}
 
 /* Slide container */
-.deck{display:flex;width:calc(100vw * 24);height:100vh;transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.deck{display:flex;width:calc(100vw * 26);height:100vh;transition:transform .6s cubic-bezier(.22,1,.36,1)}
 .slide{width:100vw;height:100vh;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
 
 /* Slide inner */
@@ -123,7 +123,7 @@ body{font-family:'Noto Sans JP','DM Sans',sans-serif;background:#1a1a2e;color:va
 <body>
 
 <div class="progress" id="progress"></div>
-<div class="page-num" id="pageNum">1 / 24</div>
+<div class="page-num" id="pageNum">1 / 26</div>
 <div class="nav">
     <button onclick="go(-1)">←</button>
     <button onclick="go(1)">→</button>
@@ -141,7 +141,143 @@ body{font-family:'Noto Sans JP','DM Sans',sans-serif;background:#1a1a2e;color:va
 </div>
 </div>
 
-<!-- ========== PAGE 2: Executive Summary ========== -->
+<!-- ========== PAGE 2: Executive Summary (narrative) ========== -->
+<div class="slide bg-white">
+<div class="s-inner" style="max-width:860px;">
+    <div class="s-label" style="color:var(--a);">Executive Summary</div>
+    <div class="s-title" style="font-size:28px;">エグゼクティブサマリー</div>
+    <div class="s-body" style="font-size:14px;line-height:2.2;margin-top:16px;">
+        noteにおけるスキンケア（基礎化粧品）カテゴリは、月間PV <strong style="color:var(--a);">451万</strong>・UU <strong style="color:var(--a);">160万</strong> を擁し、前年比+18%で成長を続けるnote内最大級の市場である。記事数は約3.1万本に達し、12の主要ブランドが言及ベースで競争している。
+    </div>
+    <div class="s-body" style="font-size:14px;line-height:2.2;margin-top:16px;">
+        市場を牽引しているのは<strong style="color:var(--o);">メンズスキンケア（+62%）</strong>と<strong style="color:var(--o);">成分解説（+55%）</strong>の2文脈で、いずれも読者の需要に対して記事の供給が不足している。特にメンズスキンケアは需給比4.1とカテゴリ内最高であり、ブランドコンテンツがほぼ空白の状態にある。コンテスト施策やタイアップ記事の投下において、先行者利益を獲得できる数少ないタイミングといえる。
+    </div>
+    <div class="s-body" style="font-size:14px;line-height:2.2;margin-top:16px;">
+        一方、構造的な課題も明らかになった。完読率38%はnote全体平均（29%）を上回る良好な水準だが、完読後のスキ転換率は14%にとどまり、note全体平均（18%）を下回る。コンテンツの質は十分であり、改善の焦点は「読後のアクション導線設計」に絞られる。
+    </div>
+    <div class="s-body" style="font-size:14px;line-height:2.2;margin-top:16px;">
+        注目すべきは<strong style="color:var(--a);">LLM経由流入の前年比+45%</strong>という成長である。ChatGPT・Perplexity等のAI検索からの流入が加速しており、スキンケアカテゴリはnote内でLLM経由流入比率が最も高い。Q&A構造・具体数値・第三者視点を備えた記事は、AI検索時代における長期的な「検索資産」となりうる。noteが他プラットフォームに対して持つ構造的優位性は、ここに集約される。
+    </div>
+    <div class="src">Source: note中間データ 14指標統合分析</div>
+</div>
+</div>
+
+<!-- ========== PAGE 3: Table of Contents ========== -->
+<div class="slide bg-cream">
+<div class="s-inner" style="max-width:960px;">
+    <div class="s-label" style="color:var(--a);">Contents</div>
+    <div class="s-title" style="font-size:28px;margin-bottom:24px;">目次</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;">
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">エグゼクティブサマリー</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">02</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">ブランド勢力図</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">14</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">3つの発見</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">04</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">ブランドポジションマップ</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">15</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;font-weight:700;color:var(--a);">市場構造</span>
+            <span style="font-size:10px;color:var(--ts);background:var(--al);padding:2px 8px;border-radius:10px;">05–09</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">UGCナラティブ分析</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">16</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">スキンケア市場の全体像</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">05</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">感情分析</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">17</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">文脈クラスター</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">06</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;font-weight:700;color:var(--a);">機会と未来</span>
+            <span style="font-size:10px;color:var(--ts);background:var(--al);padding:2px 8px;border-radius:10px;">18–22</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">メンズスキンケア Deep Dive</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">07</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">成功コンテンツの法則</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">18</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">需給ギャップ分析</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">08</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">AIO時代の検索資産</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">19</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">文脈の季節性</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">09</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">3つの戦略機会</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">20</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;font-weight:700;color:var(--a);">読者行動</span>
+            <span style="font-size:10px;color:var(--ts);background:var(--al);padding:2px 8px;border-radius:10px;">10–13</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">なぜnoteか</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">21</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">読者アクションファネル</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">10</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">個社分析：ソフィーナIP</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">22–23</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">読了深度と最適設計</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">11</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">12ヶ月カレンダー</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">24</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">流入チャネル</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">12</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">5つのキーインサイト</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">25</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;">読者の関心プロファイル</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">13</span>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;">
+            <span style="font-size:13px;font-weight:600;">Next Step</span>
+            <span style="font-size:12px;font-family:DM Sans;color:var(--ts);">26</span>
+        </div>
+    </div>
+    <div class="src">26 pages</div>
+</div>
+</div>
+
+<!-- ========== PAGE 4: 3 Key Findings ========== -->
 <div class="slide bg-teal">
 <div class="s-inner">
     <div class="s-label">Executive Summary</div>
@@ -687,7 +823,7 @@ body{font-family:'Noto Sans JP','DM Sans',sans-serif;background:#1a1a2e;color:va
 <script>
 // Navigation
 let current = 0;
-const total = 24;
+const total = 26;
 const deck = document.getElementById('deck');
 function go(dir) {
     current = Math.max(0, Math.min(total - 1, current + dir));
@@ -708,20 +844,20 @@ Chart.defaults.color = '#6b7280';
 
 const rendered = {};
 function renderChartsIfNeeded() {
-    if (current === 2 && !rendered.pvtrend) { rendered.pvtrend = true; renderPVTrend(); }
-    if (current === 3 && !rendered.cluster) { rendered.cluster = true; renderCluster(); }
-    if (current === 4 && !rendered.mens) { rendered.mens = true; renderMens(); }
-    if (current === 5 && !rendered.gap) { rendered.gap = true; renderGap(); }
-    if (current === 6 && !rendered.season) { rendered.season = true; renderSeason(); }
-    if (current === 7 && !rendered.funnel) { rendered.funnel = true; renderFunnel(); }
-    if (current === 8 && !rendered.depth) { rendered.depth = true; renderDepth(); }
-    if (current === 9 && !rendered.channel) { rendered.channel = true; renderChannel(); }
-    if (current === 10 && !rendered.interest) { rendered.interest = true; renderInterest(); }
-    if (current === 12 && !rendered.position) { rendered.position = true; renderPosition(); }
-    if (current === 14 && !rendered.sentiment) { rendered.sentiment = true; renderSentiment(); }
-    if (current === 16 && !rendered.aio) { rendered.aio = true; renderAIO(); }
-    if (current === 19 && !rendered.company_radar) { rendered.company_radar = true; renderCompanyRadar(); }
-    if (current === 20 && !rendered.company_gap) { rendered.company_gap = true; renderCompanyGap(); }
+    if (current === 4 && !rendered.pvtrend) { rendered.pvtrend = true; renderPVTrend(); }
+    if (current === 5 && !rendered.cluster) { rendered.cluster = true; renderCluster(); }
+    if (current === 6 && !rendered.mens) { rendered.mens = true; renderMens(); }
+    if (current === 7 && !rendered.gap) { rendered.gap = true; renderGap(); }
+    if (current === 8 && !rendered.season) { rendered.season = true; renderSeason(); }
+    if (current === 9 && !rendered.funnel) { rendered.funnel = true; renderFunnel(); }
+    if (current === 10 && !rendered.depth) { rendered.depth = true; renderDepth(); }
+    if (current === 11 && !rendered.channel) { rendered.channel = true; renderChannel(); }
+    if (current === 12 && !rendered.interest) { rendered.interest = true; renderInterest(); }
+    if (current === 14 && !rendered.position) { rendered.position = true; renderPosition(); }
+    if (current === 16 && !rendered.sentiment) { rendered.sentiment = true; renderSentiment(); }
+    if (current === 18 && !rendered.aio) { rendered.aio = true; renderAIO(); }
+    if (current === 21 && !rendered.company_radar) { rendered.company_radar = true; renderCompanyRadar(); }
+    if (current === 22 && !rendered.company_gap) { rendered.company_gap = true; renderCompanyGap(); }
 }
 
 const M = ['4月','5月','6月','7月','8月','9月','10月','11月','12月','1月','2月','3月'];
